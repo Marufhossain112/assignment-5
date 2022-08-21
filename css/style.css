@@ -1,0 +1,24 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+/* reset defalut padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #2c2b2a;
+}
+/* header styles */
+header {
+  /* display: inline-block; */
+  height: 480px !important;
+  width: 100%;
+  background: rgb(6, 10, 2);
+}
+.headerH2 {
+  font-size: 3rem;
+  padding-top: 10%;
+  color: rgb(255 94 25);
+  padding-left: 20%;
+}
