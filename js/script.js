@@ -3,6 +3,7 @@ const selectBtn = document.getElementsByClassName("select-btn");
 for (const button of selectBtn) {
   const noSelection = document.getElementById("no-selection");
   const playerList = document.getElementById("selected-players-list");
+
   button.addEventListener("click", function () {
     noSelection.style.display = "none";
     const parentElementLength = playerList.childNodes.length;
