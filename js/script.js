@@ -24,6 +24,16 @@ for (const button of selectBtn1) {
       event.preventDefault();
       const playerExpensesAmount = perPlayer(selectedPlayersNumber);
       playerExpenses.innerText = playerExpensesAmount;
+      const totalCalculateBtn = document.getElementById("total-calculate-btn");
+      const totalExpensesText = document.getElementById("total-expenses");
+
+      totalCalculateBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        const managerPrice = getValueFromId("manager-price");
+        const coachPrice = getValueFromId("coach-price");
+        const totalExpenses = playerExpensesAmount + managerPrice + coachPrice;
+        totalExpensesText.innerText = totalExpenses;
+      });
     });
   });
 }
