@@ -14,10 +14,8 @@ for (let i = 0; i < selectBtn.length; i++) {
 
     const elementLength = playerElement.parentNode.children.length;
     // console.log(elementLength);
-    if (elementLength > 7) {
+    if (elementLength > 5) {
       alert("You can't add more players.");
-    playerElement.innerText = "";
-      return alert ("I am gone");
     } 
   });
 }

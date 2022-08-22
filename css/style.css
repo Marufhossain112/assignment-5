@@ -25,11 +25,12 @@ header {
 .player-profile {
   border: 2px solid #434343;
 }
-#selected-players-list {
+.selection-div {
   background: rgb(6, 10, 2);
   padding: 50px;
   height: 318px;
 }
+
 #selected-players-list li {
   line-height: 2rem;
 }
