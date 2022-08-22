@@ -1,18 +1,10 @@
-const selectBtn = document.getElementsByClassName("select-btn");
-for (let i = 0; i < selectBtn.length; i++) {
+const selectBtn1 = document.getElementsByClassName("select-btn");
+for (const button of selectBtn1) {
   const playerList = document.getElementById("selected-players-list");
   const noSelection = document.getElementById("no-selection");
-  const button = selectBtn[i];
-  // console.log(buttons);
-
   button.addEventListener("click", function () {
     noSelection.style.display = "none";
-
-    // const elementLength = playerElement.parentNode.childNodes.length;
     const parentElementLength = playerList.childNodes.length;
-    // console.log(parentElementLength);
-    // console.log(button);
-
     if (parentElementLength > 4) {
       alert("You can't add more players.");
     } else {
@@ -20,11 +12,18 @@ for (let i = 0; i < selectBtn.length; i++) {
       const playerElement = document.createElement("li");
       playerElement.innerText = playerText;
       playerList.append(playerElement);
-      // console.log(button);
-      button.setAttribute("disabled",true);
-      if (button.disabled==true) {
-        button.style.background = 'gray';
+      button.setAttribute("disabled", true);
+      if (button.disabled == true) {
+        button.style.background = "gray";
       }
     }
+    const selectedPlayersNumber = playerList.childNodes.length;
+    const calculateBtn = document.getElementById("calculate-btn");
+    const playerExpenses = document.getElementById("player-expenses");
+    calculateBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      const playerExpensesAmount = perPlayer(selectedPlayersNumber);
+      playerExpenses.innerText = playerExpensesAmount;
+    });
   });
 }
