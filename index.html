@@ -31,7 +31,7 @@
               </div>
               <div class="player-info text-center mt-3">
                 <h4 class="text-white">Lionel Messi</h4>
-                <button class="btn btn-primary px-5 mt-2 mb-3">Select</button>
+                <button class="btn btn-primary px-5 mt-2 mb-3 select-btn">Select</button>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@
               </div>
               <div class="player-info text-center mt-3">
                 <h4 class="text-white">Neymar Jr.</h4>
-                <button class="btn btn-primary px-5 mt-2 mb-3">Select</button>
+                <button class="btn btn-primary px-5 mt-2 mb-3 select-btn">Select</button>
               </div>
             </div>
           </div>
@@ -53,12 +53,12 @@
               </div>
               <div class="player-info text-center mt-3">
                 <h4 class="text-white">Kylian Mbappé</h4>
-                <button class="btn btn-primary px-5 mt-2 mb-3">Select</button>
+                <button class="btn btn-primary px-5 mt-2 mb-3 select-btn">Select</button>
               </div>
             </div>
           </div>
           <div class="col-lg-3">
-            <ol class="text-white" id="selected-players">
+            <ol class="text-white" id="selected-players-list">
               <h3 class="mb-3">Selected-v</h3>
               <p id="no-selection" class="mt-5 text-center">
                 No players yet selected.
@@ -75,7 +75,7 @@
               </div>
               <div class="player-info text-center mt-3">
                 <h4 class="text-white">Vítor Machado</h4>
-                <button class="btn btn-primary px-5 mt-2 mb-3">Select</button>
+                <button class="btn btn-primary px-5 mt-2 mb-3 select-btn">Select</button>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@
               </div>
               <div class="player-info text-center mt-3">
                 <h4 class="text-white">Sergio Ramos</h4>
-                <button class="btn btn-primary px-5 mt-2 mb-3">Select</button>
+                <button class="btn btn-primary px-5 mt-2 mb-3 select-btn">Select</button>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@
               </div>
               <div class="player-info text-center mt-3">
                 <h4 class="text-white">Renato Sanches</h4>
-                <button class="btn btn-primary px-5 mt-2 mb-3">Select</button>
+                <button class="btn btn-primary px-5 mt-2 mb-3 select-btn">Select</button>
               </div>
             </div>
           </div>
@@ -118,7 +118,10 @@
                 >
                   Calculate</button
                 ><br />
-                <p>Player Expenses <span class="ms-4">$</span><span id="player-expenses">00</span> </p>
+                <p>
+                  Player Expenses <span class="ms-4">$</span
+                  ><span id="player-expenses">00</span>
+                </p>
                 <label for="player-price">Manager</label>
                 <input
                   type="text"
@@ -136,9 +139,14 @@
                   class="btn btn-primary ms-3 my-4 px-4"
                   id="total-calculate-btn"
                 >
-                  Calculate 
-                  Total</button>
-                  <p>Total <span class="doller-sign">$<span id="total-expenses">00</span></span> </p>
+                  Calculate Total
+                </button>
+                <p>
+                  Total
+                  <span class="doller-sign"
+                    >$<span id="total-expenses">00</span></span
+                  >
+                </p>
               </div>
             </form>
           </div>
